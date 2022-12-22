@@ -1,0 +1,38 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    //inicio
+    Double temp_celsius, temp_kelvin;
+
+
+    Console.SetCursorPosition(20,4);
+    Console.WriteLine( "╔════════════════════════════╗");
+    Console.SetCursorPosition(20,5);
+    Console.WriteLine("║                            ║");     Console.SetCursorPosition(20,6);
+    Console.WriteLine("╠════════════════════════════╣");
+    Console.SetCursorPosition(20,7);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,8);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,9);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,10);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,11);
+    Console.WriteLine( "╚════════════════════════════╝");
+
+    
+    Console.ForegroundColor = ConsoleColor.Cyan;
+    Console.SetCursorPosition(21,5);
+      Console.Write("temperatura em celso:");
+      temp_celsius = Convert.ToDouble(Console.ReadLine());
+      temp_kelvin = temp_celsius + 273;
+Console.ForegroundColor = ConsoleColor.DarkGreen;
+    Console.SetCursorPosition(21,8);
+    Console.WriteLine("temperatura em kelvin:"+ temp_kelvin);
+    Console.ReadKey();
+    //fim
+    
+  }
+}

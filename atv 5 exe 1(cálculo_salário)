@@ -1,0 +1,42 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    //inicio
+    Double salario, salario_minimo, salario_10, ipca ;
+        Console.SetCursorPosition(20,4);
+    Console.WriteLine( "╔════════════════════════════╗");
+    Console.SetCursorPosition(20,5);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,6);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,7);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,8);
+    Console.WriteLine("║                            ║");
+    Console.SetCursorPosition(20,9);
+    Console.WriteLine( "╚════════════════════════════╝");
+
+Console.ForegroundColor = ConsoleColor.Blue;
+  
+    Console.SetCursorPosition(21,5);
+Console.Write("entre com salario:");
+salario = Convert.ToDouble (Console.ReadLine());
+    salario_minimo = 1212;
+    salario_10 = salario * 1.1;
+    salario_10 = Math.Round(salario_10, 3);
+    ipca = salario/salario_minimo;
+    ipca = Math.Round(ipca,4);
+
+    Console.ForegroundColor = ConsoleColor.DarkMagenta;                       
+    Console.SetCursorPosition(21,7);
+    Console.WriteLine("Em salarios minimos :" + ipca);
+    Console.SetCursorPosition(21,8);
+    Console.WriteLine("salario + 10%:" + salario_10 );
+    Console.ReadKey();
+  //fim
+
+
+
+  }
+}
